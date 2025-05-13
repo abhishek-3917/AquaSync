@@ -128,7 +128,7 @@ const Index = () => {
             ))}
           </div>
           <div className="flex justify-center">
-            <Link to="/contact">
+            <Link to="/products">
               <Button>Get Your AquaSync Today</Button>
             </Link>
           </div>
