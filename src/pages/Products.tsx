@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Link } from "react-router-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
-import { Flask, Lightbulb, UvIndex } from "lucide-react";
+import { Flask, Lightbulb } from "lucide-react";
 
 const Products = () => {
   const products = [
@@ -99,7 +99,7 @@ const Products = () => {
                       <div className="relative">
                         <Flask className="h-20 w-20 text-primary" />
                         <div className="absolute -top-1 right-3 animate-pulse">
-                          <UvIndex className="h-6 w-6 text-purple-500" />
+                          <Lightbulb className="h-6 w-6 text-purple-500" />
                           <Lightbulb className="h-4 w-4 text-yellow-400 absolute -top-2 -right-1" />
                         </div>
                       </div>
