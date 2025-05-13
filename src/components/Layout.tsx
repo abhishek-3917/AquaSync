@@ -22,7 +22,13 @@ const Layout = ({ children }: LayoutProps) => {
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Link to="/" className="font-bold text-2xl">QuantumTech</Link>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+              <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z"></path>
+              <path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z"></path>
+              <path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z"></path>
+              <path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z"></path>
+            </svg>
+            <Link to="/" className="font-bold text-2xl">AquaSync</Link>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (
@@ -42,7 +48,7 @@ const Layout = ({ children }: LayoutProps) => {
           </nav>
           <div className="hidden md:flex items-center gap-4">
             <Link to="/contact">
-              <Button variant="outline">Get Started</Button>
+              <Button variant="outline">Shop Now</Button>
             </Link>
           </div>
           <div className="md:hidden">
@@ -59,11 +65,20 @@ const Layout = ({ children }: LayoutProps) => {
       <main className="flex-1">
         {children}
       </main>
-      <footer className="border-t py-8 md:py-12">
+      <footer className="border-t py-8 md:py-12 bg-gray-50 dark:bg-gray-900">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-center md:text-left">
-            <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} QuantumTech. All rights reserved.
+            <div className="flex items-center justify-center md:justify-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary mr-2">
+                <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z"></path>
+                <path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z"></path>
+                <path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z"></path>
+                <path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z"></path>
+              </svg>
+              <span className="font-bold">AquaSync</span>
+            </div>
+            <p className="text-sm text-muted-foreground mt-2">
+              © {new Date().getFullYear()} AquaSync Technology. All rights reserved.
             </p>
           </div>
           <div className="flex gap-4">

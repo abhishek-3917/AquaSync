@@ -13,10 +13,10 @@ const Features = () => {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Powerful Features for Every Need
+                Advanced Smart Bottle Technology
               </h1>
               <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Discover the capabilities that set our product apart from the competition.
+                Discover the innovative features that make AquaSync bottles the smartest way to hydrate.
               </p>
             </div>
           </div>
@@ -25,190 +25,190 @@ const Features = () => {
 
       <section className="w-full py-12">
         <div className="container px-4 md:px-6">
-          <Tabs defaultValue="productivity" className="w-full">
+          <Tabs defaultValue="tracking" className="w-full">
             <div className="flex justify-center mb-8">
               <TabsList>
-                <TabsTrigger value="productivity">Productivity</TabsTrigger>
-                <TabsTrigger value="integration">Integration</TabsTrigger>
-                <TabsTrigger value="security">Security</TabsTrigger>
-                <TabsTrigger value="analytics">Analytics</TabsTrigger>
+                <TabsTrigger value="tracking">Hydration Tracking</TabsTrigger>
+                <TabsTrigger value="temperature">Temperature Control</TabsTrigger>
+                <TabsTrigger value="app">Mobile App</TabsTrigger>
+                <TabsTrigger value="design">Design</TabsTrigger>
               </TabsList>
             </div>
-            <TabsContent value="productivity" className="space-y-4">
+            <TabsContent value="tracking" className="space-y-4">
               <div className="grid gap-6 lg:grid-cols-2">
                 <div className="flex items-center justify-center">
                   <img
-                    src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+                    src="https://images.unsplash.com/photo-1626688445658-c948f6405af0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
                     width={500}
                     height={300}
-                    alt="Productivity features"
+                    alt="Hydration tracking features"
                     className="rounded-lg object-cover w-full aspect-video"
                   />
                 </div>
                 <div className="flex flex-col justify-center space-y-4">
-                  <h2 className="text-2xl font-bold">Boost Your Team's Productivity</h2>
+                  <h2 className="text-2xl font-bold">Smart Hydration Monitoring</h2>
                   <p className="text-gray-500">
-                    Our productivity features streamline workflows, automate repetitive tasks, and provide powerful collaboration tools that help your team focus on what matters most.
+                    Our advanced sensor technology tracks your water intake in real-time, providing accurate data to help you meet your daily hydration goals.
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Smart task automation
+                      Precision volume tracking
                     </li>
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Real-time collaboration
+                      Customizable daily goals
                     </li>
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Customizable workflows
+                      Smart reminders
                     </li>
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Priority management
+                      Weekly and monthly hydration analytics
                     </li>
                   </ul>
                 </div>
               </div>
             </TabsContent>
-            <TabsContent value="integration" className="space-y-4">
+            <TabsContent value="temperature" className="space-y-4">
               <div className="grid gap-6 lg:grid-cols-2">
                 <div className="flex items-center justify-center order-2 lg:order-1">
                   <img
-                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+                    src="https://images.unsplash.com/photo-1610824352934-c10d87b700cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
                     width={500}
                     height={300}
-                    alt="Integration features"
+                    alt="Temperature control features"
                     className="rounded-lg object-cover w-full aspect-video"
                   />
                 </div>
                 <div className="flex flex-col justify-center space-y-4 order-1 lg:order-2">
-                  <h2 className="text-2xl font-bold">Seamless Integration</h2>
+                  <h2 className="text-2xl font-bold">Precision Temperature Control</h2>
                   <p className="text-gray-500">
-                    Connect with your favorite tools and platforms without friction. Our robust API and pre-built connectors ensure smooth data flow across your entire tech stack.
+                    Maintain your beverage at the perfect temperature for hours with our advanced thermal technology and interactive temperature indicators.
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      200+ app integrations
+                      Vacuum insulated double-wall construction
                     </li>
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Open API access
+                      LED temperature display
                     </li>
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Custom webhook support
+                      Adjustable temperature settings
                     </li>
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Data synchronization
+                      12+ hours of temperature maintenance
                     </li>
                   </ul>
                 </div>
               </div>
             </TabsContent>
-            <TabsContent value="security" className="space-y-4">
+            <TabsContent value="app" className="space-y-4">
               <div className="grid gap-6 lg:grid-cols-2">
                 <div className="flex flex-col justify-center space-y-4">
-                  <h2 className="text-2xl font-bold">Enterprise-grade Security</h2>
+                  <h2 className="text-2xl font-bold">Seamless Mobile Integration</h2>
                   <p className="text-gray-500">
-                    Your data security is our top priority. Our platform features robust security measures to protect sensitive information and ensure compliance with industry standards.
+                    Connect your AquaSync bottle to our intuitive mobile app for comprehensive hydration tracking, personalized insights, and health analytics.
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      End-to-end encryption
+                      Bluetooth 5.0 connectivity
                     </li>
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Role-based access control
+                      Health dashboard integration
                     </li>
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Compliance certifications
+                      Personalized hydration recommendations
                     </li>
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Regular security audits
+                      Social sharing and challenges
                     </li>
                   </ul>
                 </div>
                 <div className="flex items-center justify-center">
                   <img
-                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+                    src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
                     width={500}
                     height={300}
-                    alt="Security features"
+                    alt="Mobile app features"
                     className="rounded-lg object-cover w-full aspect-video"
                   />
                 </div>
               </div>
             </TabsContent>
-            <TabsContent value="analytics" className="space-y-4">
+            <TabsContent value="design" className="space-y-4">
               <div className="grid gap-6 lg:grid-cols-2">
                 <div className="flex items-center justify-center order-2 lg:order-1">
                   <img
-                    src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
+                    src="https://images.unsplash.com/photo-1525904097878-94fb15835963?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
                     width={500}
                     height={300}
-                    alt="Analytics features"
+                    alt="Bottle design features"
                     className="rounded-lg object-cover w-full aspect-video"
                   />
                 </div>
                 <div className="flex flex-col justify-center space-y-4 order-1 lg:order-2">
-                  <h2 className="text-2xl font-bold">Advanced Analytics</h2>
+                  <h2 className="text-2xl font-bold">Premium Design & Durability</h2>
                   <p className="text-gray-500">
-                    Gain valuable insights with our comprehensive analytics tools. Track performance, identify trends, and make data-driven decisions with customizable dashboards and reports.
+                    AquaSync bottles combine sleek aesthetics with rugged construction, ensuring they look great while withstanding the demands of your active lifestyle.
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Real-time dashboards
+                      Impact-resistant materials
                     </li>
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Custom report generation
+                      Ergonomic grip design
                     </li>
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Predictive analysis
+                      Multiple color options
                     </li>
                     <li className="flex items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
-                      Data visualization tools
+                      Leak-proof guaranteed
                     </li>
                   </ul>
                 </div>
@@ -222,17 +222,17 @@ const Features = () => {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Ready to Get Started?</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Ready to Upgrade Your Hydration?</h2>
               <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Join thousands of satisfied customers who transformed their workflows with our product.
+                Join thousands of satisfied customers who've transformed their hydration habits with AquaSync bottles.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link to="/pricing">
-                <Button size="lg">View Pricing Plans</Button>
+                <Button size="lg">Shop Bottles</Button>
               </Link>
               <Link to="/contact">
-                <Button variant="outline" size="lg">Contact Sales</Button>
+                <Button variant="outline" size="lg">Contact Us</Button>
               </Link>
             </div>
           </div>
