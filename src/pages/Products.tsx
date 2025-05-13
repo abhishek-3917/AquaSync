@@ -1,11 +1,10 @@
-
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
-import { Flask, Lightbulb } from "lucide-react";
+import { FlaskConical, Lightbulb } from "lucide-react";
 
 const Products = () => {
   const products = [
@@ -24,7 +23,7 @@ const Products = () => {
       cta: "Add to Cart",
       popular: false,
       image: "/stainless-steel-bottle.jpg",
-      icon: <Flask className="h-8 w-8 text-primary" />
+      icon: <FlaskConical className="h-8 w-8 text-primary" />
     },
     {
       name: "AquaSync Ultra",
@@ -41,7 +40,7 @@ const Products = () => {
       cta: "Add to Cart",
       popular: true,
       image: "/plastic-bottle.jpg",
-      icon: <Flask className="h-8 w-8 text-primary" />
+      icon: <FlaskConical className="h-8 w-8 text-primary" />
     },
     {
       name: "AquaSync Copper",
@@ -58,7 +57,7 @@ const Products = () => {
       cta: "Add to Cart",
       popular: false,
       image: "/copper-bottle.jpg",
-      icon: <Flask className="h-8 w-8 text-primary" />
+      icon: <FlaskConical className="h-8 w-8 text-primary" />
     }
   ];
 
@@ -97,7 +96,7 @@ const Products = () => {
                   <div className="relative mx-auto mb-6 h-48 w-48 overflow-hidden rounded-lg">
                     <div className="absolute inset-0 flex items-center justify-center bg-gray-100 dark:bg-gray-800">
                       <div className="relative">
-                        <Flask className="h-20 w-20 text-primary" />
+                        <FlaskConical className="h-20 w-20 text-primary" />
                         <div className="absolute -top-1 right-3 animate-pulse">
                           <Lightbulb className="h-6 w-6 text-purple-500" />
                           <Lightbulb className="h-4 w-4 text-yellow-400 absolute -top-2 -right-1" />
