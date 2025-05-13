@@ -22,7 +22,7 @@ const Index = () => {
                 <Link to="/features">
                   <Button size="lg">Explore Features</Button>
                 </Link>
-                <Link to="/pricing">
+                <Link to="/products">
                   <Button variant="outline" size="lg">Shop Now</Button>
                 </Link>
               </div>

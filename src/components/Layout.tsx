@@ -47,7 +47,7 @@ const Layout = ({ children }: LayoutProps) => {
             ))}
           </nav>
           <div className="hidden md:flex items-center gap-4">
-            <Link to="/contact">
+            <Link to="/products">
               <Button variant="outline">Shop Now</Button>
             </Link>
           </div>
