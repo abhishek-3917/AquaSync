@@ -143,15 +143,15 @@ const Contact = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2">Our Office</h3>
                 <address className="not-italic text-gray-500">
-                  123 Innovation Drive<br />
-                  Tech District<br />
-                  San Francisco, CA 94107
+                  12 GT Road<br />
+                  Howrah<br />
+                  West Bengal - 711204
                 </address>
               </div>
               
               <div>
                 <h3 className="text-xl font-bold mb-2">Contact Information</h3>
-                <p className="text-gray-500">Email: info@quantumtech.com</p>
+                <p className="text-gray-500">Email: info@aquasync.com</p>
                 <p className="text-gray-500">Phone: (123) 456-7890</p>
                 <p className="text-gray-500">Hours: Monday-Friday, 9AM-6PM PST</p>
               </div>
