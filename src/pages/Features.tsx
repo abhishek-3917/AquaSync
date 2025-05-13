@@ -1,9 +1,9 @@
-
 import Layout from "@/components/Layout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { toast } from "@/hooks/use-toast";
 
 const Features = () => {
   return (
@@ -26,14 +26,17 @@ const Features = () => {
       <section className="w-full py-12">
         <div className="container px-4 md:px-6">
           <Tabs defaultValue="tracking" className="w-full">
-            <div className="flex justify-center mb-8">
-              <TabsList>
+            <div className="flex justify-center mb-8 overflow-x-auto">
+              <TabsList className="flex-wrap">
                 <TabsTrigger value="tracking">Hydration Tracking</TabsTrigger>
                 <TabsTrigger value="temperature">Temperature Control</TabsTrigger>
+                <TabsTrigger value="uv">UV Purification</TabsTrigger>
+                <TabsTrigger value="filtration">Smart Filtration</TabsTrigger>
                 <TabsTrigger value="app">Mobile App</TabsTrigger>
                 <TabsTrigger value="design">Design</TabsTrigger>
               </TabsList>
             </div>
+            
             <TabsContent value="tracking" className="space-y-4">
               <div className="grid gap-6 lg:grid-cols-2">
                 <div className="flex items-center justify-center">
@@ -79,6 +82,7 @@ const Features = () => {
                 </div>
               </div>
             </TabsContent>
+            
             <TabsContent value="temperature" className="space-y-4">
               <div className="grid gap-6 lg:grid-cols-2">
                 <div className="flex items-center justify-center order-2 lg:order-1">
@@ -124,6 +128,99 @@ const Features = () => {
                 </div>
               </div>
             </TabsContent>
+            
+            <TabsContent value="uv" className="space-y-4">
+              <div className="grid gap-6 lg:grid-cols-2">
+                <div className="flex flex-col justify-center space-y-4">
+                  <h2 className="text-2xl font-bold">UV Purification Technology</h2>
+                  <p className="text-gray-500">
+                    Our built-in UV-C light technology neutralizes up to 99.9% of harmful bacteria and viruses in your water, ensuring you're always drinking the cleanest water possible.
+                  </p>
+                  <ul className="space-y-2">
+                    <li className="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
+                        <path d="M20 6 9 17l-5-5"></path>
+                      </svg>
+                      Automatic UV-C sterilization cycle
+                    </li>
+                    <li className="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
+                        <path d="M20 6 9 17l-5-5"></path>
+                      </svg>
+                      Eliminates 99.9% of bacteria and viruses
+                    </li>
+                    <li className="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
+                        <path d="M20 6 9 17l-5-5"></path>
+                      </svg>
+                      Self-cleaning bottle interior
+                    </li>
+                    <li className="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
+                        <path d="M20 6 9 17l-5-5"></path>
+                      </svg>
+                      Battery-efficient LED technology
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex items-center justify-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1550963295-019d8a8a61c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
+                    width={500}
+                    height={300}
+                    alt="UV purification technology"
+                    className="rounded-lg object-cover w-full aspect-video"
+                  />
+                </div>
+              </div>
+            </TabsContent>
+            
+            <TabsContent value="filtration" className="space-y-4">
+              <div className="grid gap-6 lg:grid-cols-2">
+                <div className="flex items-center justify-center order-2 lg:order-1">
+                  <img
+                    src="https://images.unsplash.com/photo-1548507110-b0243a3b05b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
+                    width={500}
+                    height={300}
+                    alt="Smart filtration system"
+                    className="rounded-lg object-cover w-full aspect-video"
+                  />
+                </div>
+                <div className="flex flex-col justify-center space-y-4 order-1 lg:order-2">
+                  <h2 className="text-2xl font-bold">Advanced Filtration System</h2>
+                  <p className="text-gray-500">
+                    Our multi-stage smart filtration system removes contaminants, improves taste, and monitors filter life to ensure optimal performance at all times.
+                  </p>
+                  <ul className="space-y-2">
+                    <li className="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
+                        <path d="M20 6 9 17l-5-5"></path>
+                      </svg>
+                      Multi-stage activated carbon filtration
+                    </li>
+                    <li className="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
+                        <path d="M20 6 9 17l-5-5"></path>
+                      </svg>
+                      Removes chlorine, lead, and other contaminants
+                    </li>
+                    <li className="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
+                        <path d="M20 6 9 17l-5-5"></path>
+                      </svg>
+                      Smart filter life monitoring
+                    </li>
+                    <li className="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 mr-2 text-primary">
+                        <path d="M20 6 9 17l-5-5"></path>
+                      </svg>
+                      Easy, twist-and-replace filter system
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </TabsContent>
+            
             <TabsContent value="app" className="space-y-4">
               <div className="grid gap-6 lg:grid-cols-2">
                 <div className="flex flex-col justify-center space-y-4">
@@ -169,6 +266,7 @@ const Features = () => {
                 </div>
               </div>
             </TabsContent>
+            
             <TabsContent value="design" className="space-y-4">
               <div className="grid gap-6 lg:grid-cols-2">
                 <div className="flex items-center justify-center order-2 lg:order-1">
@@ -229,7 +327,12 @@ const Features = () => {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link to="/pricing">
-                <Button size="lg">Shop Bottles</Button>
+                <Button size="lg" onClick={() => toast({
+                  title: "AquaSync Premium",
+                  description: "Check out our latest smart bottle collection!",
+                })}>
+                  Shop Bottles
+                </Button>
               </Link>
               <Link to="/contact">
                 <Button variant="outline" size="lg">Contact Us</Button>
